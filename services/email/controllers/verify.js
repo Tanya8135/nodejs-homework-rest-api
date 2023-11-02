@@ -1,6 +1,6 @@
-const User = require('../../models/users')
-const { HttpError, handleReqError } = require('../../helpers')
-const sendEmail = require('../../helpers/sendEmail')
+const User = require('../../../models/users')
+const { HttpError, handleReqError } = require('../../../helpers')
+const sendEmail = require('../../email/helpers/sendEmail')
 const { SENDER_UKR_NET } = process.env
 
 const resendVerify = async (req, res, next) => {

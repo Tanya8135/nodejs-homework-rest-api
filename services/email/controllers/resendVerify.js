@@ -1,5 +1,5 @@
-const User = require('../../models/users')
-const { HttpError, handleReqError } = require('../../helpers')
+const User = require('../../models/email')
+const { HttpError, handleReqError } = require('../../../helpers')
 
 
 const resendVerify = async (req, res, next) => {
